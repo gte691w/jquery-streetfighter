@@ -4,11 +4,11 @@ $(document).ready(function(){
 	$(".ryu").on('mouseenter', function(){
 		$(".ryu-still").hide();
 		$(".ryu-ready").show();
-	});
+	})
 
-	$(this).on('mouseleave', function() {
-      	$(".ryu-ready").hide();
-      	$(".ryu-still").show();
+   $(this).on('mouseleave', function() {
+      $(".ryu-ready").hide();
+      $(".ryu-still").show();
 		
   	});
 
@@ -34,7 +34,7 @@ $(document).ready(function(){
   	});
 
   	$(document).on('keydown', function(event){
-  		if(event.keyCode === 88 && ryu_throw = 0){
+  		if(event.keyCode === 88 && ryu_throw === 0){
   			$(".ryu-ready").hide();
   			$(".ryu-cool").show();
   		}
@@ -43,7 +43,7 @@ $(document).ready(function(){
   	});		
 
   	$(document).on('keyup', function(event){
-      if(ryu_throw = 1){
+      if(ryu_throw == 1){
   			$(".ryu-cool").hide();
   			$(".ryu-ready").show();
        }
